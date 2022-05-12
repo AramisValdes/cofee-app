@@ -1,5 +1,4 @@
 import database
-import PySimpleGUI as sg
 
 
 MENU_PROMPT = """-- Coffee Bean App --
@@ -13,26 +12,6 @@ Please choose one of these options:
 5) Exit.
 
 Your selection:"""
-
-
-sg.theme('DarkAmber')   # Add a touch of color
-# All the stuff inside your window.
-layout = [  [sg.Text('Please select one of these options:')],
-            [sg.Text('Enter something on Row 2'), sg.InputText()],
-            [sg.Button('Add New Bean')],
-            [sg.Button('Ok'), sg.Button('Cancel')] ]
-
-# Create the Window
-window = sg.Window('Coffee Bean Database', layout)
-# Event Loop to process "events" and get the "values" of the inputs
-while True:
-    event, values = window.read()
-    if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
-        break
-    print('You entered ', values[0])
-
-window.close()
-
 
 
 def menu():
