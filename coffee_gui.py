@@ -17,8 +17,9 @@ ADD_NEW_BEAN = [
             [sg.Text('Please fill out the following fields:')],
             [sg.Text('Bean Name', size=(15, 1)), sg.InputText(key='-name-', do_not_clear=False)],
             [sg.Text('Preparation Method', size=(15, 1)), sg.InputText(key='-method-', do_not_clear=False)],
-            [sg.Text('Enter your rating score (0-100)', size=(15, 1)), sg.InputText(key='-rating-', do_not_clear=False), ],
-            [sg.Submit('Submit'),sg.Exit()]
+            [sg.Text('Enter your rating score (0-100)', size=(15, 1)),
+             sg.InputText(key='-rating-', do_not_clear=False), ],
+            [sg.Submit('Submit'), sg.Exit()]
 
         ]
     ]
